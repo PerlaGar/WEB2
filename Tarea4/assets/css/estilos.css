@@ -1,0 +1,87 @@
+html, body {
+  margin: 5px;
+  padding: 1px;
+  font-family: "Courier New, Courier, monospace";
+}
+
+header {
+  height: 200px;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Courier New, Courier, monospace";
+  font-weight: 30px;
+}
+
+div.buscador {
+  align-items: center;
+  text-align: center;
+  margin: 0px auto;
+  padding-bottom: 30px;
+}
+
+button[type=submit] {
+  color: rgb(84, 131, 212);
+  height: 50px;
+  width: 150px;
+  font-size: 25px;
+  border: none;
+}
+
+img.img-news {
+  width: 300px;
+  height: 200px;
+}
+
+#barra {
+  margin-top: 50px;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  font-size: 25px;
+}
+
+div.paper {
+  align-items: center;
+  text-align: center;
+}
+
+#paperimg {
+  width: 150px;
+  height: 100px;
+}
+
+section {
+  background-color: rgba(193, 188, 188, 0.774);
+}
+
+@media screen and (max-width: 880px) {
+  header {
+    height: 150px;
+  }
+  header > h1 {
+    margin: 50px auto;
+  }
+  #barra {
+    margin-top: 30px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    font-size: small;
+  }
+  button[type=submit] {
+    color: rgb(84, 131, 212);
+    height: 30px;
+    width: 90px;
+    font-size: small;
+    border: none;
+  }
+  #paperimg {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

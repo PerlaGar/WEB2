@@ -1,0 +1,88 @@
+@import "variables";
+
+@mixin medidas-100 {
+    width: 100%;
+    height: 100%;
+}
+html,body{
+    margin: 5px;
+    padding: 1px;
+    font-family: $font-text;
+}
+header{
+    height: 200px;
+    padding-top: 20px;
+
+}
+h1{
+    text-align: center;
+    font-family: $font-text;
+    font-weight: 30px;
+}
+div.buscador{
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+button[type="submit"]{
+    color:$color-boton;
+    height: 50px;
+    width: 150px;
+    font-size: $letra-bus;
+    border: none;
+}
+img.img-news{
+    width: 300px;
+    height: 200px;
+}
+#barra{
+    margin-top: 50px;
+    width: 400px;
+    color: $color-letra;
+    height: 50px;
+    font-size: $letra-bus;
+}
+div.paper{
+    align-items: center;
+    text-align: center;
+}
+#paperimg{
+    width: 150px;
+    height: 100px;
+}
+section{
+    background-color: $fondo;
+}
+@mixin tablet {
+    @media screen and (max-width:880px) {
+        @content;
+    }
+}
+@include tablet {
+    header {
+        height: 150px;
+    }
+    header>h1 {
+        margin: 50px auto;
+    }
+    #barra{
+        margin-top: 30px;
+        width: 200px;
+        color: $color-letra;
+        height: 40px;
+        font-size: small;
+    }
+    button[type="submit"]{
+        color:$color-boton;
+        height: 30px;
+        width: 90px;
+        font-size: small;
+        border: none;
+    }
+    #paperimg{
+        width: 70px;
+        height: 50px;
+    }
+
+}
