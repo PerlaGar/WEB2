@@ -1,5 +1,5 @@
 ## Tarea 5: 
-#Esta tarea consta en el desarrollo de una API para listar, crear, buscar, actualizar y eliminar tareas en una base de datos.<br> Ademas implemnetar Swagger es una serie de reglas, especificaciones y herramientas que nos ayudan a documentar APIs.
+#Esta tarea consta en el desarrollo de una API para listar, crear, buscar, actualizar y eliminar tareas en una base de datos.<br> Ademas implemetar Swagger, que  es una serie de reglas, especificaciones y herramientas que nos ayudan a documentar APIs.
 Tecnologías utilizadas: Express, Node, MongoDB y Swagger UI.<br>
 Librería utilizada: Mongoose <br>
 Comandos en la terminal: <br>
