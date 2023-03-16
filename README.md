@@ -1,8 +1,9 @@
-## Tarea 4: 
-#Esta tarea consta de un buscador de noticias, las cuales se obtienen de una API en este caso de NewsAPI (https://newsapi.org). Al escribir la o las palabras de la noticia solicitada y dar enter o presionar el botón, muestra enseguida las noticias relacionadas a la busqueda. <br>
-Tecnologías utilizadas: Sass, Express, Node, Handlebars y request de una API<br>
-Libreria utilizada: Bootstrap <br>
+## Tarea 5: 
+#Esta tarea consta en el desarrollo de una API para listar, crear, buscar, actualizar y eliminar tareas en una base de datos.<br> Ademas implemnetar Swagger es una serie de reglas, especificaciones y herramientas que nos ayudan a documentar APIs.
+Tecnologías utilizadas: Express, Node, MongoDB y Swagger UI.<br>
+Librería utilizada: Mongoose <br>
 Comandos en la terminal: <br>
     npm install<br>
     npm run styles<br>
     npm start <br>
+    crear un archivo .env en la ruta raíz de la carpeta y pegar ahí el link a la base dedatos "MONGO_ULR" proporcionado
