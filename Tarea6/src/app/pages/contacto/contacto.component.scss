@@ -1,0 +1,19 @@
+.center {
+    height: 100%;
+    display:flex;
+    justify-content: center;
+
+
+}
+.dentro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 100px;
+    height: 100%;
+}
+li{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}

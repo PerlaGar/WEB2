@@ -1,0 +1,24 @@
+/*todo,app-header,app-footer{
+    margin: 0%;
+}
+todo {
+    height: 100%;
+    width: 100%;
+}
+
+$ancho:30%;
+app-sidenav {
+    float: left;
+    height: 100%;
+    width: $ancho;
+}
+
+todo app-sidenav {
+    float: left;
+    width: 200px;
+}
+
+todo .panels router-outlet {
+    margin-left: 220px;
+}
+*/

@@ -1,0 +1,27 @@
+.center {
+    height: 100%;
+    display:flex;
+    justify-content: center;
+
+
+}
+.dentro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 40px;
+}
+span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;   
+     font-size: 25px;
+}
+img{
+    width: 300px;
+    height: 400px;
+}
