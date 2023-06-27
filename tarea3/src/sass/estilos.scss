@@ -1,0 +1,253 @@
+@import "variables";
+
+@mixin medidas-100 {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    height: 50px;
+}
+
+div {
+    &.col {
+        border: solid 2px $primary-border;
+        margin-top: 10px;
+        font-size: 20px;
+        background-color: $second-color;
+    }
+}
+
+
+header {
+    border: solid 2px $second-color;
+    height: 300px;
+    width: 100%;
+    background-color: $primary-color;
+    text-align: center;
+}
+
+header {
+    >h1 {
+        font-family: $font-h;
+        text-align: center;
+        position: relative;
+        margin: 150px auto;
+    }
+}
+
+h2 {
+    font-family: $font-h;
+    text-align: center;
+    border: solid 6px $second-border;
+    padding: 50px;
+}
+
+main {
+    margin: 10px 50px;
+}
+
+main {
+    >section {
+        margin: 20px 50px;
+    }
+}
+
+main {
+    >section#primera {
+        width: 800px;
+        height: 400px;
+        padding-right: 10px;
+    }
+}
+
+aside {
+    width: 500px;
+    height: 420px;
+    position: absolute;
+    top: 350px;
+    left: 900px;
+}
+
+aside {
+    >img {
+        @include medidas-100;
+    }
+}
+
+@mixin item-medidas {
+    float: left;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.gallery {
+    width: 100%;
+    padding-left: 50px;
+}
+
+.gallery {
+    >.gallery-item {
+        border: solid 2px;
+        width: 400px;
+        height: 500px;
+        @include item-medidas;
+    }
+}
+
+.gallery-item {
+    >img {
+        @include medidas-100;
+    }
+}
+
+.gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+    font-family: $font-text;
+}
+h3.e{
+    text-align: center;
+    margin-top: 50px;
+    color:rgb(111, 111, 124);
+}
+#imgerror {
+    width: 400px;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+    
+  } 
+#serie {
+    margin-left: 150px;
+}
+
+li {
+    font-size: 22px;
+    font-family: $font-text;
+    padding-bottom: 20px;
+
+    >img {
+        width: 500px;
+        height: 300px;
+        margin-left: 90px;
+    }
+}
+
+footer {
+    background-color: $second-color ;
+    padding-left: 20%;
+}
+
+th,td {
+    padding-left: 90px;
+    color: $primary-border;
+}
+ol {
+    margin-left: 70px;
+}
+
+div.contacto {
+    margin-left: 50px;
+}
+
+@mixin computadora {
+    @media screen and (max-width:1500px) {
+        @content;
+    }
+}
+
+@include computadora {
+    aside {
+        width: 360px;
+        height: 330px;
+        position: absolute;
+        left: 900px;
+    }
+
+    main>section {
+        margin: 5px 20px;
+    }
+}
+
+
+@mixin tablet {
+    @media screen and (max-width:1024px) {
+        @content;
+    }
+}
+
+@include tablet {
+    header {
+        height: 150px;
+    }
+
+    header>h1 {
+        margin: 50px auto;
+    }
+
+    main>section {
+        margin: 5px 20px;
+    }
+
+    aside {
+        position: relative;
+        left: 400px;
+        top: 0px;
+    }
+
+    main>section#primera {
+        width: auto;
+        height: 300px;
+        padding-right: 10px;
+    }
+}
+
+@mixin celular {
+    @media screen and (max-width:990px) {
+        @content;
+    }
+}
+
+@include celular {
+    aside {
+        position: relative;
+        left: 200px;
+    }
+
+    .gallery>.gallery-item {
+        width: 500px;
+        height: 600px;
+        @include item-medidas;
+    }
+
+    h2 {
+        padding: 0px;
+    }
+
+    footer {
+        padding-left: 4px;
+    }
+
+    div.col {
+        margin-top: 11px;
+        font-size: 12px;
+        height: 35px;
+        text-align: center;
+    }
+
+    li>img {
+        width: 300px;
+        height: 250px;
+
+    }
+}
